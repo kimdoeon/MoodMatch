@@ -1,0 +1,120 @@
+/* <!-- HEADER -->
+    <header>
+      <img src="./logo_kids.png" />
+    </header>
+
+    <!-- MAIN -->
+    <section class="main">
+        <div class="title">
+            내 그림과 어울리는 음악 추천 받기
+        </div>
+        <div class="btn_drawing">
+            <i class="fa-solid fa-pencil"></i>
+            <i class="fa-solid fa-eraser"></i>
+        </div>
+        <div class="upload_drawing">
+            마음껏 그림을 그려보세요
+        </div>
+        <button>완성</button>
+        <div class="tip">TIP! 내가 표현하고 싶은 것을 단어와 함께 그려보세요~</div>
+    </section> */
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 7vh;
+  margin-bottom: 10px;
+}
+
+/* MAIN */
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .title {
+  font-size: 18px;
+  background-color: rgb(242, 242, 242);
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.main .btn_drawing {
+  width: 100%;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(127, 127, 127);
+}
+
+.btn_drawing i {
+  font-size: 28px;
+}
+
+.upload_file {
+  margin-top: 15px;
+  width: 100%;
+  height: 60vh;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: gray;
+}
+.option{
+    margin-top: 10px;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
+}
+.option .count{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.option .time{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.option button{
+    font-size: 18px;
+    border: none;
+    width: 130px;
+    background-color: rgb(242, 242, 242);
+}
+
+.submit {
+    font-size: 18px;
+  margin-top: 15px;
+  border: none;
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: rgb(255, 23, 76);
+}
+.tip {
+  margin-top: 10px;
+  font-size: 14px;
+}
+/* FOOTER */
+footer {
+  text-align: center;
+  font-size: 12px;
+}
