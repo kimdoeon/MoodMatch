@@ -8,19 +8,14 @@ export const CanvasProvider = ({ children }) => {
   const contextRef = useRef(null);
 
   const prepareCanvas = () => {
+    // 캔버스 준비, 드로잉 선 준비
     const canvas = canvasRef.current;
     canvas.width = 800;
     canvas.height = 500;
     canvas.style.width = `${800}px`;
     canvas.style.height = `${500}px`;
-    // canvas.translate(100, 100);
-    // canvas.top = 200;
-    // canvas.left = 200;
-    // canvas.style.width = `${window.innerWidth}px`;
-    // canvas.style.height = `${window.innerHeight}px`;
 
     const context = canvas.getContext("2d");
-    context.scale(2, 2);
     context.lineCap = "round";
     context.strokeStyle = "black";
     context.lineWidth = 4;
@@ -49,10 +44,10 @@ export const CanvasProvider = ({ children }) => {
   };
 
   const clearCanvas = () => {
+    //캔버스 클리어
     const canvas = canvasRef.current;
     const context = canvas.getContext("2d");
-    context.fillStyle = "white";
-    context.fillRect(200, 200, canvas.width, canvas.height);
+    context.clearRect(0, 0, canvas.width, canvas.height);
   };
 
   return (

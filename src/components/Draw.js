@@ -25,8 +25,8 @@ function Draw() {
 
           <div className={styles.upload_drawing}>
             <CanvasProvider>
-              <Canvas />
               <ClearCanvasButton />
+              <Canvas />
             </CanvasProvider>
           </div>
 
