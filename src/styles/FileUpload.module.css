@@ -1,0 +1,15 @@
+.fileChoose{
+  text-align: center;
+  align-self: center;
+  align-items: center;
+}
+
+.image{
+  width: 800px;
+  height: 60vh;
+}
+
+.video{
+  width: 800px;
+  height: 60vh;
+}
