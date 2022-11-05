@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "../styles/Draw.module.css";
-// import {useState,useEffect} from "react";
+// import Drawing from "./Drawing";
+import { Canvas } from "./Canvas";
+import { ClearCanvasButton } from "./ClearCanvasButton";
+import { CanvasProvider } from "./CanvasContext";
+
 function Draw() {
   return (
     <div>
@@ -18,7 +22,13 @@ function Draw() {
             <i className="fa-solid fa-pencil"></i>
             <i className="fa-solid fa-eraser"></i>
           </div>
-          <div className={styles.upload_drawing}>마음껏 그림을 그려보세요</div>
+
+          <div className={styles.upload_drawing}>
+            <CanvasProvider>
+              <Canvas />
+              <ClearCanvasButton />
+            </CanvasProvider>
+          </div>
 
           <Link to="/recommend">
             <button>완성</button>
