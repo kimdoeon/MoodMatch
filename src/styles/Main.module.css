@@ -1,0 +1,232 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+      Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  /* HEADER */
+  .main_Header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    height: 6vh;
+  }
+  .main_Header img {
+    height: 45px;
+  }
+  
+  /* MAIN */
+  .main_content {
+    width: 100%;
+  }
+  .main_content .wrapper {
+    width: 100%;
+  }
+  .main_content .wrapper img {
+    width: 100%;
+    height: 90vh;
+  }
+  .main_content .description {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* UPLOAD */
+  .main_service {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(242, 242, 242);
+  }
+  .container {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .main_service .title {
+    font-size: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .upload {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  
+  .drawing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px dashed black;
+    margin-right: 20px;
+    width: 40%;
+  }
+  .pictureAndVideo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: white;
+    border: 1px dashed black;
+    border-radius: 10px;
+  }
+  .pictureAndVideo div {
+    margin-top: 10px;
+  }
+  .drawing label {
+    width: 100%;
+    height: 100%;
+  }
+  .drawing i {
+    width: 30px;
+  }
+  .drawing div {
+    margin-top: 10px;
+  }
+  .btn_upload {
+    width: 100%;
+    height: 100%;
+    border: 1px dashed black;
+  }
+  #file {
+    display: none;
+  }
+  a {
+    display: block;
+  }
+  /* HOWTO */
+  .howTo {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+  }
+  .howTo_title {
+    font-size: 23px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .howTo_description {
+    font-size: 20px;
+    line-height: 2;
+  }
+  
+  /* RECOMENDED SONG */
+  .main_content1 {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(232, 223, 223);
+  }
+  .main_content1 img {
+    width: 200px;
+    height: 200px;
+  }
+  .main_content1 .tag {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .main_content1 .tag_description {
+    display: inline-block;
+    background-color: beige;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .main_content2 {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(212, 212, 212);
+  }
+  .main_content2 .song_button {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    background-color: white;
+  }
+  .main_content2 .button_img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .main_content3 {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(176, 176, 176);
+  }
+  .main_content3 .song {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_content3 img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main_content3 .playlist_desceiption1 {
+    display: block;
+  }
+  .main_content3 .playlist_artist {
+    display: inline-block;
+  }
+  .main_content3 .playlist_title {
+    display: inline-block;
+  }
+  .main_content3 .playlist_desceiption2 {
+    display: block;
+  }
+  .main_content3 .playlist_tag {
+    display: inline-block;
+  }
+  
+  /* FOOTER */
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
