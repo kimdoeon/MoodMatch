@@ -3,24 +3,22 @@ import styles from "../styles/FileUpload.module.css";
 
 function FileUpload({ state, getState }) {
   const [file, setFile] = useState({});
-  //TEST
-  //const [data,setData] = useState(100);
   const imgUpload = (e) => {
     const imageType = e.target.files[0].type.includes("image");
     const videoType = e.target.files[0].type.includes("video");
-    // console.log(e.target.files[0]);
     setFile({
       url: URL.createObjectURL(e.target.files[0]),
       image: imageType,
       video: videoType,
     });
-    
-    
+   console.log(file);
     getState(true);
   };
   // console.log("-------------");
   // console.log(file);
   // console.log("child state: ", state);
+  console.log("img render");
+  console.log(file.url);
   return (
     <div>
       <input className={styles.fileChoose} type="file" onChange={imgUpload} />

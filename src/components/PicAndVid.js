@@ -6,17 +6,15 @@ import styles from "../styles/PicAndVid.module.css";
 function PicAndVid() {
   // 파일 업로드를 위한 코드
   const[state,setState] = useState(false);
-  const getState = (state)=>{
-    setState((curr)=>{
-      curr=state;});
+  const getState = (val)=>{
+    console.log("child에서 parennt로 전달된 값: ",val);
+    if(val){
+      setState(true)
+    }
   }
 
-  // Test code
-  // const[x,setX] = useState(0);
-  // const test = (x)=>{
-  //   console.log(x);
-  // }
-  console.log("parent state: ",state);
+  console.log("state: ",state);
+
   return (
     <div>
       <header className={styles.picAndVid_Header}>
@@ -30,15 +28,15 @@ function PicAndVid() {
           <div className={styles.title}>
             내 사진/영상과 어울리는 음악 추천 받기
           </div>
-{/* 
-          <div className={styles.upload_file}>
-            <span>사진/영상을 업로드 해주세요</span>
-            <FileUpload test={test}/>
-          </div> */}
+
           {state ? 
-            <FileUpload state={state} getState={getState}/>:
+            <div>
+              <FileUpload state={state} getState={getState}/>
+              <div>state:true 상태</div>
+            </div>:
               <div className={styles.upload_file}>
                 <span>사진/영상을 업로드 해주세요</span>
+                <div>state:false 상태</div>
                 <FileUpload state={state} getState={getState}/>
               </div> 
           }

@@ -13,7 +13,7 @@ export const CanvasProvider = ({ children }) => {
     canvas.height = 500;
     canvas.style.width = `${800}px`;
     canvas.style.height = `${500}px`;
-    canvas.translate(100, 100);
+    // canvas.translate(100, 100);
     // canvas.top = 200;
     // canvas.left = 200;
     // canvas.style.width = `${window.innerWidth}px`;
