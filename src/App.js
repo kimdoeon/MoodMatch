@@ -14,7 +14,7 @@ import Recommend from "./components/Recommend";
 //   Test,
 // } from './components';
 
-function App() {
+function App(){
   return (
     <div>
       <Routes>
