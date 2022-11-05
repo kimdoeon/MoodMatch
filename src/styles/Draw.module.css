@@ -65,8 +65,11 @@ button {
   font-size: 14px;
 }
 
-/* FOOTER */
-footer {
-  font-size: 12px;
-  text-align: center;
+.clearDrawing {
+  font-size: 16px;
+  color: white;
+  background-color: rgb(255, 23, 76);
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
 }
