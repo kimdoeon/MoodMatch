@@ -1,0 +1,9 @@
+.recommend_Header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 8vh;
+}
+.recommend_logo {
+  height: 100%; 
+}

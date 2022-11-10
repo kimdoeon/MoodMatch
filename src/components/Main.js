@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "../styles/Main.module.css";
+
 function Main() {
   return (
     <div>
@@ -42,24 +42,35 @@ function Main() {
         <div className={styles.container}>
           <div className={styles.howTo_content}>
             <div className={styles.howTo_title}>HOW TO</div>
-            <div className={styles.howTo_description}>
-              1. 원하는 모드를 선택합니다.
-              <br />
-              2. 추천받고 싶은 노래의 시간을 선택합니다.
-              <br />
-              3. 사용자가 업로드한 파일을 AI가 분석하여 어울리는 분위기의 음악을
-              추천해드립니다.
-            </div>
+            <ul className={styles.howTo_description}>
+              <li>
+                원하는 모드를 선택합니다.
+                <ul>
+                  <li>손그림모드</li>
+                  그림판에 그림을 그리고 완성 버튼을 누릅니다.
+                  <li>사진/영상 모드</li>
+                  사진/영상 파일을 업로드하고 완성 버튼을 누릅니다.
+                </ul>
+              </li>
+
+              <li>
+                사용자 업로드 파일을 분석하여 AI가 파일의 분위기에 맞는 음악을
+                추천합니다.
+                <ul>
+                  <li>손그림 모드는 동요 한 곡을 추천합니다. </li>
+                  <li>
+                    사진/영상 모드는 사용자가 지정한 곡 수만큼 노래를
+                    추천합니다.
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
       <footer>
-        <p>
-          &copy; 2022
-          <br />
-          kangdb123-@naver.com &nbsp; ilsin205@naver.com
-        </p>
+        <p>&copy; 2022 kangdb123-@naver.com &nbsp; ilsin205@naver.com</p>
       </footer>
     </div>
   );

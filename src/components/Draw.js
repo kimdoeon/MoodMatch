@@ -1,7 +1,6 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../styles/Draw.module.css";
-// import Drawing from "./Drawing";
 import { Canvas } from "./Canvas";
 import { ClearCanvasButton } from "./ClearCanvasButton";
 import { CanvasProvider } from "./CanvasContext";
@@ -29,11 +28,9 @@ function Draw() {
               <Canvas />
             </CanvasProvider>
           </div>
-
           <Link to="/recommend">
             <button>완성</button>
           </Link>
-
           <div className={styles.tip}>
             TIP! 내가 표현하고 싶은 것을 단어와 함께 표현해보세요~
           </div>

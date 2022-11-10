@@ -2,18 +2,15 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import FileUpload from "./FileUpload";
 import styles from "../styles/PicAndVid.module.css";
-// import {useState,useEffect} from "react";
 function PicAndVid() {
   // 파일 업로드를 위한 코드
-  const[state,setState] = useState(false);
-  const getState = (val)=>{
-    console.log("child에서 parennt로 전달된 값: ",val);
-    if(val){
-      setState(true)
+  const [state, setState] = useState(false);
+  const getState = (val) => {
+    console.log("child에서 parennt로 전달된 값: ", val);
+    if (val) {
+      setState(true);
     }
-  }
-
-  console.log("state: ",state);
+  };
 
   return (
     <div>
@@ -29,26 +26,27 @@ function PicAndVid() {
             내 사진/영상과 어울리는 음악 추천 받기
           </div>
 
-          {state ? 
+          {state ? (
             <div>
-              <FileUpload state={state} getState={getState}/>
-              <div>state:true 상태</div>
-            </div>:
-              <div className={styles.upload_file}>
-                <span>사진/영상을 업로드 해주세요</span>
-                <div>state:false 상태</div>
-                <FileUpload state={state} getState={getState}/>
-              </div> 
-          }
-          
+              <FileUpload state={state} getState={getState} />
+            </div>
+          ) : (
+            <div className={styles.upload_file}>
+              <span>사진/영상을 업로드 해주세요</span>
+              <FileUpload state={state} getState={getState} />
+            </div>
+          )}
+
           <div className={styles.option}>
             <div className={styles.count}>
               <span>원하는 노래 곡 수(1~5곡)</span>
-              <button></button>
-            </div>
-            <div className={styles.time}>
-              <span>원하는 노래 재생 시간(30분 단위)</span>
-              <button></button>
+              <select className={styles.select}>
+                <option value="1">1곡</option>
+                <option value="2">2곡</option>
+                <option value="3">3곡</option>
+                <option value="4">4곡</option>
+                <option value="5">5곡</option>
+              </select>
             </div>
           </div>
 

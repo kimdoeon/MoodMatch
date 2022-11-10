@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../styles/Recommend.module.css";
 function Recommend() {
@@ -6,7 +6,7 @@ function Recommend() {
     <div>
       <header className={styles.recommend_Header}>
         <Link to="/">
-          <img src="img/logo.jpg" />
+          <img className={styles.recommend_logo} src="./img/logo.jpg" />
         </Link>
       </header>
 

@@ -11,14 +11,9 @@ function FileUpload({ state, getState }) {
       image: imageType,
       video: videoType,
     });
-   console.log(file);
     getState(true);
   };
-  // console.log("-------------");
-  // console.log(file);
-  // console.log("child state: ", state);
-  console.log("img render");
-  console.log(file.url);
+
   return (
     <div>
       <input className={styles.fileChoose} type="file" onChange={imgUpload} />
